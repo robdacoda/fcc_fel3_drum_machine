@@ -1,8 +1,11 @@
-import React from 'react';
+const Drumpad = ({keyTrigger, keyCode, ...drum}) => {
+  console.log(keyTrigger);
 
-const Drumpad = () => {
-  return (
-    <div>{props.id}</div>
+  return ( 
+  <h3 className={drum.className} >{keyTrigger}</h3>  
   )
+
 }
 export default Drumpad
+
+

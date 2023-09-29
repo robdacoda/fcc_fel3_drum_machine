@@ -1,9 +1,11 @@
-import React from 'react'
+// import React from 'react'
+// import ReactDOM from "react-dom";
 
-const Display = () => {
+
+const Display = ({displayValue}) => {
   return (
       <div id="display">  
-      Display 
+       {displayValue}
       </div>
   )
 }

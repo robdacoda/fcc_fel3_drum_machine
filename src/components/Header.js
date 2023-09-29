@@ -1,4 +1,6 @@
-import React from 'react'
+// import React from 'react'
+// import ReactDOM from "react-dom";
+
 import logo from '../logo.svg';
 
 const Header = () => {

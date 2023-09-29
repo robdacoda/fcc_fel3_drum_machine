@@ -1,23 +1,67 @@
-import logo from './logo.svg';
+import {useState, useEffect } from "react";
 import './App.css';
+import Header from './components/Header.js';
+import Display from './components/Display.js';
+import Drumkit from './components/Drumkit.js';
 
 function App() {
+
+  const DATA = [
+    {
+    className: "drum-pad high-hat-closed",
+    id: "Closed-HH",
+    keyCode: "81",
+    keyTrigger: "Q",
+    src: ""
+
+    },
+    {
+    className: "drum-pad high-hat-open",
+    id: "Open-HH",
+    keyCode: "87",
+    keyTrigger: "W",
+    src: ""
+
+    },
+    {
+    className: "drum-pad crash",
+    id: "Crash",
+    keyCode: "69",
+    keyTrigger: "E",
+    src: ""
+    }
+  ];
+
+  const [drums, setDrums] = useState(DATA);
+  const [displayValue, setDisplayValue] = useState("Display Default Valuuuuu");
+
+  function onKeyDown(event) {
+    console.log(event.key);
+    console.log(event.code);
+
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', onKeyDown);
+    } 
+  )
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="drum-machine" className="drum-machine">
+      <Header></Header>
+
+      <div className="main-container">
+
+        <div className="drumkit-container">
+          <Drumkit drums={drums}></Drumkit>
+        </div>
+
+        <div className="display-container">
+          <Display displayValue={displayValue}></Display>
+        </div>
+
+      </div>
+      
     </div>
   );
 }
