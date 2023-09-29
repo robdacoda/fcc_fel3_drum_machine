@@ -5,7 +5,7 @@ import Display from './components/Display.js';
 import Drumkit from './components/Drumkit.js';
 
 function App() {
-
+console.log("Hello");
   const DATA = [
     {
     className: "drum-pad high-hat-closed",
@@ -38,11 +38,14 @@ function App() {
   function onKeyDown(event) {
     console.log(event.key);
     console.log(event.code);
+    console.log("Hello again");
 
   };
 
   useEffect(() => {
-    document.addEventListener('keydown', onKeyDown);
+    console.log("Hello, hello");
+
+    document.addEventListener("keydown", onKeyDown);
     } 
   )
 
