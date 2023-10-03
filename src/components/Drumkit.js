@@ -1,14 +1,13 @@
 import Drumpad from './Drumpad.js';
-// .styleName="drum-pad-triggered"
 
-const Drumkit = ({drums}) => {
+const Drumkit = ( ...drums) => {
 
   return (
     <>
-      {drums.map((drum, index) => (
-        <Drumpad key={index} {...drum}></Drumpad>
-        ))
-      }
+      
+      { drums.map((drum, index) => (
+        <Drumpad {...drum} key={index}></Drumpad>
+        ))}
     </>
 
   )
