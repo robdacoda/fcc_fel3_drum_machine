@@ -16,10 +16,10 @@ const Drumpad = ({ displayValue, setDisplayValue, keyTrigger, keyCode, ...drum})
       } 
     }
 
-  useEffect(() => {
+  // useEffect(() => {
          document.addEventListener("keydown", (event) => doKeyDown(event));
 
-  }, );
+  // }, );
 
   
   // function play(id, src) {
