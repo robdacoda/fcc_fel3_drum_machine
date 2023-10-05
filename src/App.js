@@ -84,7 +84,8 @@ function App() {
 
   const [displayValue, setDisplayValue] = useState("Please press a key corresponding to a drum pad.");
  
-  // const keyCodes = drums.map((drum) => drum.keyCode);
+  
+// const keyCodes = drums.map((drum) => drum.keyCode);
 
 
 //  function onKeyDown(event) {
@@ -119,7 +120,7 @@ function App() {
       <div className="main-container">
 
         <div className="drumkit-container">
-          <Drumkit drums={drums} ></Drumkit>
+          <Drumkit drums={drums} displayValue={displayValue} setDisplayValue={setDisplayValue}></Drumkit>
         </div>
 
         <div className="display-container">
