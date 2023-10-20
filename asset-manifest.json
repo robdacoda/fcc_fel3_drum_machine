@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/fcc_fel3_drum_machine/static/css/main.7c19e9b2.css",
-    "main.js": "/fcc_fel3_drum_machine/static/js/main.0af82aac.js",
+    "main.css": "/fcc_fel3_drum_machine/static/css/main.19d0fc8d.css",
+    "main.js": "/fcc_fel3_drum_machine/static/js/main.8286b742.js",
     "static/media/logo.svg": "/fcc_fel3_drum_machine/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/doh2.mp3": "/fcc_fel3_drum_machine/static/media/doh2.b0facb25983588a1a58a.mp3",
     "index.html": "/fcc_fel3_drum_machine/index.html",
-    "main.7c19e9b2.css.map": "/fcc_fel3_drum_machine/static/css/main.7c19e9b2.css.map",
-    "main.0af82aac.js.map": "/fcc_fel3_drum_machine/static/js/main.0af82aac.js.map"
+    "main.19d0fc8d.css.map": "/fcc_fel3_drum_machine/static/css/main.19d0fc8d.css.map",
+    "main.8286b742.js.map": "/fcc_fel3_drum_machine/static/js/main.8286b742.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c19e9b2.css",
-    "static/js/main.0af82aac.js"
+    "static/css/main.19d0fc8d.css",
+    "static/js/main.8286b742.js"
   ]
 }
