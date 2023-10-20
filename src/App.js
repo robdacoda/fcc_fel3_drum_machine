@@ -4,6 +4,8 @@ import Header from './components/Header.js';
 import Display from './components/Display.js';
 import Drumkit from './components/Drumkit.js';
 
+import './src/doh2.mp3';
+
 function App() {
   const DATA = [
     {
@@ -11,7 +13,8 @@ function App() {
     id: "Heater-1",
     keyCode: "81",
     keyTrigger: "Q",
-    src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+    src: './src/doh2.mp3'
+    // src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
 
     },
     {
